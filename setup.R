@@ -17,5 +17,8 @@ install.packages("devtools")
 packages <- c("tidyverse", "import","glue", "RMariaDB", "ggplot2", "scales",
               "reshape2", "RSQLite", "DBI")
 
+# TODO: Finish this setup 
+# packages = read.delim("requirements_r.txt", header = F, sep = "\n", stringsAsFactors = F)[, 1]
+
 # Install package list
 ipak(packages)
