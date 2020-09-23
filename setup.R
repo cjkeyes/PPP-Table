@@ -13,12 +13,16 @@ ipak <- function(pkg){
 # Install Devtools
 install.packages("devtools")
 
-# packages to install
-packages <- c("tidyverse", "import","glue", "RMariaDB", "ggplot2", "scales",
-              "reshape2", "RSQLite", "DBI")
+packages = read.delim("requirements_r.txt", 
+                      header = F, 
+                      sep = "\n", 
+                      stringsAsFactors = F)[, 1]
 
-# TODO: Finish this setup 
-# packages = read.delim("requirements_r.txt", header = F, sep = "\n", stringsAsFactors = F)[, 1]
+# packages to install
+packages = read.delim("requirements_r.txt",
+                      header = F,
+                      sep = "\n",
+                      stringsAsFactors = F)[, 1]
 
 # Install package list
 ipak(packages)

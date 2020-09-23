@@ -1,0 +1,8 @@
+import
+RMariaDB
+RSQLite
+DBI
+tidyverse
+ggplot2
+scales
+reshape2
